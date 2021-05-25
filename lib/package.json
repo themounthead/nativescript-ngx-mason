@@ -1,0 +1,24 @@
+{
+  "name": "nativescript-ngx-mason",
+  "version": "1.0.0",
+  "description": "NativeScript + Angular Mason Engine",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/themounthead/nativescript-ngx-mason"
+  },
+  "nativescript": {
+    "platforms": {
+      "android": "6.5.4",
+      "ios": "6.5.3"
+    }
+  },
+  "author": "TheMountHead",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "@angular/compiler": "~8.2.0",
+    "@angular/core": "~8.2.0",
+    "nativescript-windowed-modal": "^6.2.1",
+    "@ngrx/component-store": "^10.1.1"
+  }
+}

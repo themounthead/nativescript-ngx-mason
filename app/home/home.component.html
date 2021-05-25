@@ -1,6 +1,19 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<StackLayout>
-  <Label text="Tap the button"></Label>
-  <Button text="TAP" (tap)="onTap()"></Button>
-  <Label [text]="getMessage()" textWrap="true"></Label>
-</StackLayout>
+<ActionBar height="0"></ActionBar>
+<Mason header="fixed" footer="fixed" debug>
+  <StackLayout mason-header height="100">
+    <Label text="Header"></Label>
+  </StackLayout>
+  <StackLayout mason-content height="800">
+    <Button text="sidebar" (tap)="openSidebar()"></Button>
+    <Button text="offsidebar" (tap)="openOffSidebar()"></Button>
+    <Button text="toaster" (tap)="openToaster()"></Button>
+    <Button text="snackbar" (tap)="openSnackbar()"></Button>
+    <Button text="sheet" (tap)="openSheet($event)"></Button>
+    <Button text="dialog" (tap)="openDialog($event)"></Button>
+    <Button text="menu" (tap)="openMenu($event)" horizontalAlignment="center"></Button>
+  </StackLayout>
+  <StackLayout mason-footer height="100">
+    <Label text="Footer"></Label>
+  </StackLayout>
+</Mason>

@@ -1,0 +1,16 @@
+{
+  "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+  "lib": {
+    "entryFile": "src/public_api.ts",
+     "umdModuleIds": {
+      "tns-core-modules/platform": "tns-core-modules/platform",
+      "tns-core-modules/ui/page": "tns-core-modules/ui/page",
+      "tns-core-modules/ui/enums": "tns-core-modules/ui/enums",
+      "nativescript-angular": "nativescript-angular",
+      "nativescript-angular/modal-dialog": "nativescript-angular/modal-dialog",
+      "nativescript-windowed-modal": "nativescript-windowed-modal",
+      "@ngrx/component-store": "@ngrx/component-store"
+    }
+  },
+  "dest": "../dist/"
+}

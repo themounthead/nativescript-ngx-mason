@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es5",
+    "target": "es6",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "noEmitHelpers": true,
     "noEmitOnError": true,
+    "noUnusedLocals": true,
     "lib": [
       "es6",
       "dom",
@@ -17,7 +18,8 @@
       "*": [
         "./node_modules/tns-core-modules/*",
         "./node_modules/*"
-      ]
+      ],
+      "nativescript-ngx-mason": ["./lib/index.ts"]
     }
   },
   "exclude": [
